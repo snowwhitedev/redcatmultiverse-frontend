@@ -1,0 +1,65 @@
+.aboutSection {
+  width: 100%;
+
+  .aboutContainer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 100px 0 100px;
+  }
+
+  .aboutTitle {
+    font-family: 'Gotham Ultra';
+    font-size: 62px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--font-color);
+    margin-bottom: 30px;
+  }
+
+  .aboutMessage {
+    font-family: 'Bariol';
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: var(--font-color);
+    margin-bottom: 50px;
+  }
+
+  img {
+    width: 324px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutSection {
+    align-items: center;
+
+    .aboutContainer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .aboutTitle {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .aboutMessage {
+      margin: 40px 0 30px 0;
+      font-size: 16px;
+    }
+
+    img {
+      width: 240px;
+    }
+  }
+}

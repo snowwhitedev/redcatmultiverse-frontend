@@ -1,0 +1,138 @@
+.container {
+  padding-top: 180px;
+  margin-bottom: 50px;
+}
+
+.hero_banner {
+  width: 100%;
+  height: 680px;
+  position: relative;
+  margin-top: -88px;
+  background-image: url('/images/multiverse_background.jpg');
+  padding-left: 100px;
+}
+
+.tagCommentContainer {
+  position: relative;
+  display: flex;
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pageContentContainer {
+  width: 100%;
+}
+
+.redCatTitle {
+  margin-top: 120px;
+}
+
+.figmentTitle {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.subTitleSection {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.figmentCardContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+
+  .cardItem {
+    margin-bottom: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.009, 1.009);
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .hero_banner {
+    padding-left: 60px;
+  }
+
+  .contentContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero_banner {
+    padding-left: 30px;
+  }
+
+  .contentContainer {
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .tagCommentContainer {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .figmentCardContainer {
+    padding-top: 0px;
+
+    .cardItem {
+      margin-bottom: 30px;
+    }
+  }
+
+  .redCatTitle {
+    margin-top: 30px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .figmentTitle {
+    margin-top: 30px;
+  }
+
+  .figmentCardContainer {
+    flex-direction: column;
+  }
+
+  .hero_banner {
+    background-position-x: -500px;
+  }
+
+  .subTitleSection {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .hero_banner {
+    padding-left: 10px;
+  }
+
+  .contentContainer {
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,153 @@
+.modalContainer {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  .imgSection {
+    width: fit-content;
+    margin-right: 30px;
+
+    img {
+      width: 350px;
+    }
+  }
+
+  .propertySection {
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .propertyContainer {
+    width: 390px;
+
+    .fullBox {
+      width: 390px;
+    }
+
+    .smallBox {
+      width: 190px;
+      margin-top: 10px;
+      padding: 5px;
+    }
+
+    .itemTitle {
+      text-align: center;
+      padding: 8px;
+      font-weight: bold;
+
+      span {
+        font-weight: normal;
+      }
+    }
+
+    .properties {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .propertyBox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    .propertyText {
+      font-family: 'Gotham Medium';
+      text-transform: uppercase;
+      line-height: 1;
+      margin-left: 8px;
+
+      .propertyLabel {
+        font-size: 8px;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+
+      .propertyValue {
+        font-size: 10px;
+        font-weight: 900;
+      }
+    }
+  }
+
+
+  .collector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    .collectorLeft {
+      display: flex;
+      align-items: center;
+    }
+
+    .collectorText {
+      font-family: 'Gotham Medium';
+      line-height: 1;
+      font-style: normal;
+      letter-spacing: normal;
+      margin-left: 5px;
+
+      .collectorLabel {
+        font-size: 9px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+      }
+
+      .collectorAddress {
+        font-size: 11px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  &.dark {
+    .contentBox {
+      background-color: rgba(255, 255, 255, 0.21);
+      color: #fff;
+      border-radius: 3px;
+
+      // tooltip
+      .attributeTooltip {
+        background: #0f5665;
+        color: #fff;
+        width: 390px;
+        left: 0 !important;
+        box-shadow: 0 -3px 5px 4px rgba(0, 0, 0, 0.5);
+        opacity: 1;
+
+        &.right {
+          left: unset !important;
+          right: 0 !important;
+        }
+      }
+
+      .attributeTooltipArrow {
+        left: 15px !important;
+        box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+        &.right {
+          left: unset !important;
+          right: 15px !important;
+        }
+      }
+    }
+  }
+}

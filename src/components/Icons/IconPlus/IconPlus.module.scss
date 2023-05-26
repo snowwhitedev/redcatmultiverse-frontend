@@ -1,0 +1,16 @@
+.iconPlus {
+  width: 58px;
+  height: 58px;
+
+  &.small {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .iconPlus {
+    width: 36px;
+    height: 36px;
+  }
+}

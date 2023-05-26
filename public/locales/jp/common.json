@@ -1,0 +1,32 @@
+{
+  "header": {
+    "ple": "PLE",
+    "roadmap": "ロードマップ",
+    "multiverse": "The Multiverse",
+    "community": "コミュニティ",
+    "whitepaper": "ホワイトペーパー",
+    "careers": "採用（キャリア）",
+    "blog": "Blog",
+    "connect": "Connect"
+  },
+  "connectModal": {
+    "connectToThe": "マルチバースとつながる"
+  },
+  "footer": {
+    "allRights": "All rights reserved."
+  },
+  "meta": {
+    "title": "RedCat Multiverse",
+    "twitterDescription": "RedCat MultiverseのPlay-Learn-Earnモデルで、ゲームの未来と学びの未来についてご覧ください。私たちは、プレイヤーのゲームへの取り組みに深い報酬を加え、内発的価値と外発的価値の両方を生み出しています。プレイヤーは、新しいスキルを身につけることで、金銭的な報酬を得ることができます。",
+    "twitterTitle": "RCMのインセプションパッケージは、6つのキャラクターNFTとトレーディングカードNFTなどに増えます"
+  },
+  "cta": {
+    "btnLabel": "RCMフェローシップに応募する",
+    "first": "RCM ポータルが開設しました！",
+    "second": "The Inception は RCM のデラックス コレクティブルです。",
+    "third": "ゲームスターターパッケージ (NFTのコレクション)",
+    "mintingLive": "Minting は現在 LIVE です。",
+    "joinToMint": "Join the Multiverse",
+    "needHelp": "NEED HELP?"
+  }
+}

@@ -1,0 +1,57 @@
+.memberContainer {
+  width: 100%;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 15px;
+
+  .memberQuote {
+    font-family: "Gotham Medium";
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .memberMessage {
+    font-family: 'Bariol';
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: var(--font-color);
+    margin-bottom: 10px;
+  }
+
+  .blogImg {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 40px 0;
+  }
+
+  .memberName {
+    text-transform: uppercase;
+  }
+
+  .memberButton {
+    width: 132.4px;
+    height: 31.7px;
+    margin: 34.4px 1px 0 202.4px;
+    border-radius: 5px;
+    background-color: #e83324;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .memberContainer {
+    .memberQuote {
+      font-family: "Gotham Medium";
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .memberMessage {
+      font-size: 14px;
+    }
+  }
+}

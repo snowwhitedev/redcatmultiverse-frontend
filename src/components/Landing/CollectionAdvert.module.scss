@@ -1,0 +1,58 @@
+.collectionAdvertSection {
+  width: 100%;
+  padding: 60px 30px 70px 30px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: solid 3px #e83324;
+  background-color: #e83324;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+
+  .collectionAdvertTitle {
+    font-family: 'Gotham Ultra';
+    font-size: 36px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .collectionAdvertIcons {
+    margin-top: 55px;
+    display: flex;
+
+    .collectionAdvertIcon {
+      margin: 0px 20px;
+    }
+  }
+}
+
+.applyButton {
+  width: 218px;
+  height: 62px;
+  margin: 0 auto;
+  padding: 16px 0 22px;
+  border-radius: 5px;
+  background-color: #1b1628;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .collectionAdvertSection {
+    padding: 50px 30px 50px 30px;
+
+    .collectionAdvertTitle {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+  }
+}

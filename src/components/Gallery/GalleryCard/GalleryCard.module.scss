@@ -1,0 +1,36 @@
+.galleryCard {
+  width: 150px;
+}
+
+.catImgContainer {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21);
+}
+
+.catContent {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.catName {
+  font-family: 'Gotham Ultra';
+  font-size: 10px;
+  font-weight: 900;
+  text-align: center;
+  color: #1b1628;
+  text-transform: uppercase;
+}
+
+.catID {
+  font-family: 'Bariol';
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #e83324;
+}

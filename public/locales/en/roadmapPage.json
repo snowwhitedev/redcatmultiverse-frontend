@@ -1,0 +1,75 @@
+{
+  "roadmap": "ROADMAP",
+  "done": "DONE",
+  "upcoming": "UPCOMING",
+  "now": "NOW",
+  "future": "FUTURE",
+  "extendedBtn": "For extended RCM Labs road map, please click here",
+  "contents": {
+    "id_0": {
+      "title": "THE RED CAT ARRIVES",
+      "bullets": {
+        "id_0": "Pre-production started",
+        "id_1": "Core design completed",
+        "id_2": "Meerkat Bag NFT Collection Sale",
+        "id_3": "RedCat Multiverse community begins"
+      },
+      "period": "Q4 2021 & Q1 2022"
+    },
+    "id_1": {
+      "title": "FIRST LOOKS",
+      "bullets": {
+        "id_0": "Pre-seed funding finalized",
+        "id_1": "RedCat Multiverse game simulator built in-house",
+        "id_2": "RedCat Multiverse White Paper published"
+      },
+      "period": "Q2 2022"
+    },
+    "id_2": {
+      "title": "THE GIFTED OPERATIVES ARRIVE",
+      "bullets": {
+        "id_0": "RedCat Multiverse trailer/video",
+        "id_1": "Inception NFT collection announced"
+      },
+      "period": "Q3 2022"
+    },
+    "id_3": {
+      "title": "RedCat Multiverse Orientation",
+      "bullets": {
+        "id_0": "Inception NFT Collection Sale",
+        "id_1": "Closed Alpha release <span style='color: #e83324;'>(Initially for Inception NFT Holders and select RCM Insiders)</span>"
+      },
+      "period": "Q4 2022"
+    },
+    "id_4": {
+      "title": "The RedCat Multiverse Opens",
+      "bullets": {
+        "id_0": "Conception NFT Collection Sale",
+        "id_1": "Governance Token Sale",
+        "id_2": "Accretion NFT Collection Sale <span style='color: #7192f3;'>(open to public)</span>"
+      },
+      "period": "Q1 2023"
+    },
+    "id_5": {
+      "title": "New Era of Smart Fun Expands",
+      "bullets": {
+        "id_0":"RCM Private Beta: Acceretion Phase",
+        "id_1":"Conception NFT Sale",
+        "id_2":"RCM Private Beta: Conception Phase",
+        "id_3":"RCM Monetary System Announcement & Release",
+        "id_4":"Public Beta Release",
+        "id_5":"Private & Public  Token Sale",
+        "id_6": "Live design balance updates",
+        "id_7": "New campaigns & more power skills",
+        "id_8": "New Figment NFTs(characters)",
+        "id_9": "Introduction of DAOs",
+        "id_10": "Introduction of DEFI Liquidity Pools",
+        "id_11": "Visual upgrades with more universes",
+        "id_12": "Land in the Convergence & PVE game mode",
+        "id_13": "3rd party and community content",
+        "id_14": "Open metaverse"
+      },
+      "period": "2023 & Beyond"
+    }
+  }
+}

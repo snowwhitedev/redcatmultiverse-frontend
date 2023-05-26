@@ -1,0 +1,77 @@
+.teamWrapper {
+  margin-top: 75px;
+  margin-bottom: 60px;
+  width: 100%;
+
+  .teamContent {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 100px 20px 100px;
+  }
+
+  .teamTitle {
+    margin: 0 0 40px 0;
+    font-family: "Gotham Ultra";
+    font-size: 62px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--font-color);
+  }
+
+  .teamMessage {
+    margin: 0 0 40px 0;
+    font-family: "Bariol";
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: var(--font-color);
+  }
+
+  .cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .cardsContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .teamWrapper {
+    .teamContent {
+      .cardsContainer {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .teamWrapper {
+    .teamContent {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .teamTitle {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .teamMessage {
+      font-size: 16px;
+    }
+  }
+}

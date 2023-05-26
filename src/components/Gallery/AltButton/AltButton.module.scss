@@ -1,0 +1,29 @@
+.altBtnContainer {
+  width: fit-content;
+  border-radius: 8px;
+  background-color: rgba(27, 22, 40, 0.13);
+}
+
+.altBtn {
+  width: 106px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: 'Gotham Medium';
+  font-size: 12px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1b1628;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+
+  &.active {
+    color: #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.21);
+    background-color: #e83324;
+    transition: all 0.3s ease-in-out;
+  }
+}

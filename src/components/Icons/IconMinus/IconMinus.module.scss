@@ -1,0 +1,15 @@
+.iconMinus {
+  width: 30px;
+  height: 4px;
+
+  &.small {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .iconMinus {
+    width: 24px;
+    height: 3px;
+  }
+}

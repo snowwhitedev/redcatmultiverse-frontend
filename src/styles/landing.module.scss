@@ -1,0 +1,21 @@
+.advertImage {
+  position: absolute;
+  top: -194px;
+  right: 400px;
+}
+
+.icNFTMintingDetailWrapper {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .advertImage {
+    top: -193px;
+    right: 130px;
+  }
+
+  .icNFTMintingDetailWrapper {
+    margin-bottom: 0px;
+  }
+}

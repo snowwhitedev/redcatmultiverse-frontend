@@ -1,0 +1,399 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  row-gap: 13px;
+}
+
+.community_grid {
+  padding-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 13px;
+  color: #fff;
+}
+
+.community_card {
+  padding: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 00px;
+    font-family: Gotham Medium;
+  }
+
+  &.item_g {
+    .title {
+      max-width: 300px;
+    }
+  }
+
+  .numeration {
+    font-size: 89px;
+    letter-spacing: 0px;
+    line-height: normal;
+    margin: 0px;
+    padding: 0px;
+    font-family: Gotham Ultra;
+    display: flex;
+    align-items: center;
+
+    .numberArrowIcon {
+      opacity: 0;
+      transition: opacity 0.7s ease-in-out;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      .numberArrowIcon {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  .label {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+}
+
+.community_card:hover {
+  transform: scale(1.009, 1.009);
+}
+
+.community_card:hover::after {
+  opacity: 1;
+}
+
+.cardImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item_a {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: #f9c930;
+  grid-area: item_a;
+  height: 314px;
+
+  .cardImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 8px;
+    z-index: -1;
+  }
+}
+
+.item_b {
+  background-color: #f2957c;
+  grid-area: item_b;
+  height: 395px;
+  z-index: 0;
+  position: relative;
+
+  .cardImage {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 150px;
+  }
+}
+
+.item_c {
+  background-color: #7192f3;
+  grid-area: item_c;
+  height: 468px;
+  z-index: 0;
+  position: relative;
+
+  .cardImage {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+.item_d {
+  background-color: #e83324;
+  color: #fff;
+  grid-area: item_d;
+  height: 241px;
+  z-index: 0;
+  position: relative;
+
+  .cardImage {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+}
+
+.item_e,
+.item_f,
+.item_g {
+  height: 232px;
+}
+
+.item_e {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: #e83324;
+  color: #fff;
+  grid-area: item_e;
+  // height: 225px;
+  z-index: 0;
+
+  .cardImage {
+    position: absolute;
+    right: 20%;
+    top: 15%;
+  }
+}
+
+.item_f {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: var(--background-com-card);
+  color: var(--font-color-com-card);
+  grid-area: item_f;
+  // height: 230px;
+  z-index: 0;
+
+  .cardImage {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.item_g {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: #7192f3;
+  grid-area: item_g;
+  z-index: 0;
+
+  .cardImage {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+}
+
+.modalBackDrop {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+  // background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 50px 30px;
+  z-index: 99;
+}
+
+.modalContainer {
+  // height: calc(100vh - 100px);
+  // height: 620px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contactSection {
+  width: 100%;
+  height: 139px;
+  margin: 12px 0;
+  padding: 53.7px 24.5px;
+  position: relative;
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(to right, #f9c930 25%, #f2957c 50%, #7192f3 75%) border-box;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.009, 1.009);
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: #1b1628;
+    top: 3px;
+    left: 3px;
+    border-radius: 8px;
+  }
+
+  p {
+    font-family: 'Gotham Ultra';
+    font-size: 34px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--font-color);
+    text-transform: uppercase;
+  }
+
+  img {
+    position: absolute;
+    height: 100px;
+    right: 50px;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .item_e {
+    .cardImage {
+      right: 5%;
+    }
+  }
+}
+
+@media (max-width:1024px) {
+  .modalBackDrop {
+    padding: 17px 8px 30px 8px;
+  }
+
+  .modalContainer {
+    height: calc(100vh - 50px);
+  }
+
+  .community_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 7px;
+    grid-template-areas:
+      "item_e item_c"
+      "item_a item_c"
+      "item_d item_b"
+      "item_f item_g";
+  }
+
+  .item_a,
+  .item_b,
+  .item_e,
+  .item_d,
+  .item_f,
+  .item_g {
+    height: 148px;
+  }
+
+  .item_c {
+    height: 304px;
+  }
+
+  .community_card {
+    padding: 16px 10px;
+
+    .title {
+      font-size: 12px;
+    }
+
+    .numeration {
+      font-size: 46px;
+    }
+
+    .label,
+    .text {
+      font-size: 10px;
+      line-height: normal;
+    }
+  }
+
+  .item_b {
+    .cardImage {
+      max-height: 70%;
+      max-width: 60%;
+    }
+  }
+
+  .item_c {
+    .cardImage {
+      max-width: 120px;
+      max-height: 138px;
+    }
+  }
+
+  .item_d {
+    .label {
+      max-width: 85%;
+    }
+
+    .cardImage {
+      max-width: 52px;
+      max-height: 72px;
+      right: 0;
+    }
+  }
+
+  .item_e {
+    .cardImage {
+      max-width: 100px;
+      max-height: 75px;
+    }
+  }
+
+  .item_g {
+    .cardImage {
+      width: 63px;
+      height: 121px;
+    }
+  }
+
+  .contactSection {
+    p {
+      font-size: 18px;
+    }
+
+    img {
+      max-height: 100%;
+      right: 0;
+    }
+  }
+}
+
+// Regarding screen height
+@media screen and (min-width: 1025px) {
+  @media (min-height: 1100px) {
+
+    .item_e,
+    .item_f,
+    .item_g {
+      height: calc((100vh - 250px - 90px - 26px)/3);
+    }
+
+    .item_a,
+    .item_d {
+      height: calc((100vh - 250px - 90px - 13px) * 0.4);
+    }
+
+    .item_b,
+    .item_c {
+      height: calc((100vh - 250px - 90px - 13px) * 0.6);
+    }
+  }
+}

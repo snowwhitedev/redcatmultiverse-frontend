@@ -1,0 +1,70 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 379px;
+  margin-bottom: 50px;
+
+  .memberName {
+    margin-top: 15px;
+    font-family: 'Gotham Medium';
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--font-color);
+  }
+
+  .memberJob {
+    margin-top: 15px;
+    font-family: 'Bariol';
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--font-color);
+  }
+
+  .memberDescription {
+    margin-top: 10px;
+    font-family: 'Bariol';
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: var(--font-color);
+  }
+
+  .memberPhoto {
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .cardContainer {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cardContainer {
+    .memberName {
+      font-size: 20px;
+    }
+
+    .memberJob {
+      font-size: 16px;
+    }
+
+    .memberDescription {
+      font-size: 14px;
+    }
+  }
+
+}

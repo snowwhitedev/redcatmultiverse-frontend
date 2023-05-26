@@ -1,0 +1,119 @@
+@import '../../styles/colors.scss';
+
+.modalBackDrop {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 40px 30px;
+}
+
+.modalWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modalContainer {
+  position: absolute;
+  max-height: 620px;
+  height: 100%;
+  width: 100%;
+  max-width: 1379px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 46px 40px;
+  border-radius: 8px;
+  background:
+    linear-gradient(#14101b, #14101b) padding-box,
+    linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
+  // background:
+  //   linear-gradient(#fff, #fff) padding-box,
+  //   linear-gradient(to right, $blue-light 25%, $orange-red 49%, $yellow 75%) border-box;
+  border: 2px solid transparent;
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  // height: 400px;
+  // opacity: 0.9;
+  object-fit: cover;
+  object-position: right;
+}
+
+.title {
+  max-width: 718px;
+  font-family: 'Gotham Medium';
+  font-size: 62px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.submitForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+  position: relative;
+}
+
+.subscribeIframe {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+}
+
+@media screen and (max-width: 1024px) {
+  .modalBackDrop {
+    padding: 25px 10px;
+  }
+
+  .modalContainer {
+    padding: 21px 16px;
+  }
+
+  .title {
+    max-width: 304px;
+    font-family: 'Gotham Ultra';
+    font-size: 30px;
+  }
+
+  // .background {
+  //   height: 230px;
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  .close {
+    right: 15px;
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .title {
+    font-size: 26px;
+  }
+}
